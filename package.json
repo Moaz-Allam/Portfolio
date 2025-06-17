@@ -1,8 +1,11 @@
 {
-  "name": "folio-v1",
+  "name": "portfolio-v1",
   "version": "0.1.0",
+  "homepage": "https://github.com/Moaz-Allam/Portfolio",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -33,6 +36,7 @@
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.5",
