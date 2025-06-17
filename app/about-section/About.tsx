@@ -1,0 +1,101 @@
+import "../animations/animate.css";
+import AnimatedBody from "../animations/AnimatedBody";
+import AnimatedTitle from "../animations/AnimatedTitle";
+
+const About = () => {
+  return (
+    <section
+      className="relative z-10 w-full items-center justify-center overflow-hidden bg-[#0E1016] bg-cover bg-center pt-16 pb-36 md:pt-20 md:pb-44 lg:pt-20 lg:pb-56"
+      id="about"
+    >
+      <div className="mx-auto flex w-[90%] flex-col items-center justify-center lg:max-w-[1212.8px]">
+        <AnimatedTitle
+          text={
+            "I MAKE BRANDS BEAUTIFUL, WEBSITES POWERFUL AND CONTENT CAPTIVATING."
+          }
+          className={
+            "mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
+          }
+          wordSpace={"mr-[14px]"}
+          charSpace={"mr-[0.001em]"}
+        />
+
+        <div className="mx-auto flex w-[100%] flex-col lg:max-w-[1200px] lg:flex-row lg:gap-20">
+          <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-medium  leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16  lg:max-w-[90%] lg:text-[24px] ">
+            <AnimatedBody
+              text={
+                "I specialize in crafting immersive, user‑centric web experiences that marry art, technology, and storytelling. Whether it’s sculpting pixel‑perfect layouts in Figma and Photoshop or bringing designs to life with GSAP, Framer Motion, React, Next.js, and Three.js, I build sites that aren’t just beautiful—they convert. From WordPress and Elementor builds to custom React‑powered interfaces, my focus is always on usability, performance, and a seamless brand narrative."
+              }
+            />
+            <AnimatedBody
+              text={
+                "Beyond my day‑to‑day as a web designer and front‑end developer, I thrive in community leadership roles. As part of TEDx Menufia, Resala, Google Developer Student Clubs, and Microsoft Learn Student Ambassadors, I’ve organized workshops, mentored peers, and led initiatives—like gamified campaigns (AUC Quest) and blood donation drives—that harness technology for real‑world impact. These experiences sharpen my communication skills and fuel my passion for collaborative problem‑solving."
+              }
+              className={"hidden"}
+            />
+            <AnimatedBody
+              text={
+                "When I'm not coding, you can find me binge-watching anime, hanging out with friends, cheering on Manchester United, or discovering new music in my favorite genres like RnB, UK Drill, and Chill Rap."
+              }
+            />
+            <AnimatedBody
+              text={
+                "I'm currently working on some exciting projects that I can't wait to share with you. But I’m always open to new opportunities and collaborations."
+              }
+            />
+          </div>
+
+          <div className="mb-24 flex w-[100%] flex-col gap-4 text-[18px] font-normal leading-relaxed tracking-wide text-[#e4ded7]/80 sm:mb-32 md:mb-40 md:gap-6 md:text-[16px] md:leading-normal lg:mt-0 lg:mb-16 lg:max-w-[30%] lg:text-[18px]">
+            <div className="flex flex-col gap-4 md:gap-3">
+              <AnimatedTitle
+                text={"Frontend Tools"}
+                className={
+                  "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
+                }
+                wordSpace={"mr-[0.25em]"}
+                charSpace={"mr-[0.01em]"}
+              />
+              <AnimatedBody
+                text={
+                  "JavaScript (ES6+), React, Next.js, TypeScript, Flutter, Redux, Redux Toolkit, React Testing Library, Firebase, HTML5, Git/GitHub, Stripe."
+                }
+              />
+            </div>
+            <div className="flex flex-col gap-3">
+              <AnimatedTitle
+                text={"UI Libraries"}
+                className={
+                  "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
+                }
+                wordSpace={"mr-[0.25em]"}
+                charSpace={"mr-[0.01em]"}
+              />
+              <AnimatedBody
+                text={
+                  "CSS3/SCSS/SASS, Tailwind CSS, Material UI, Framer Motion, GSAP, Bootstrap, Chart.js."
+                }
+              />
+            </div>
+            <div className="flex flex-col gap-3">
+              <AnimatedTitle
+                text={"Design Tools"}
+                className={
+                  "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
+                }
+                wordSpace={"mr-[0.25em]"}
+                charSpace={"mr-[0.01em]"}
+              />
+              <AnimatedBody
+                text={
+                  "Figma, Framer, FigJam, Adobe XD, ProtoPie, Adobe Photoshop, UX Research, UI Design, Prototyping."
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
